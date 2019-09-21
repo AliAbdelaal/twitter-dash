@@ -32,14 +32,14 @@ you will find a message ending with the url like so
 
 Jump into the link and you will directed to the landing page
 
+![landing](res/landing.png)
+
+you can type your query and press analyse to get the dashboard, it's a little bit slow, but it works :D
+
 ## Usage tips
 
 * The max number of tweets are set to 1000 and for only one month back, you can override these option in the `twitterdash/scraper.py` file.
 * Changing the `poolsize` in `twitterdash/scraper.py` will affect the speed of scraping but also the performance of your machine, don't get too far with it.
-
-![landing](res/landing.png)
-
-you can type your query and press analyse to get the dashboard, it's a little bit slow, but it works :D
 
 ## References
 

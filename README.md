@@ -12,10 +12,10 @@ to use the dashboard follow these steps
 
 * create a virtualenv and activate it
 
-'''bash
+```bash
 $python -m virtualenv venv
 $source venv/bin/activate
-'''
+```
 
 * install all the requirements
 

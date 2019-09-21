@@ -13,7 +13,7 @@ to use the dashboard follow these steps
 * create a virtualenv and activate it
 
 ```bash
-$python -m virtualenv venv
+$python -m venv venv
 $source venv/bin/activate
 ```
 

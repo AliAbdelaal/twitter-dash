@@ -10,6 +10,13 @@ the dashboard runs in the local host, it's still a little bit slow, but that's a
 
 to use the dashboard follow these steps
 
+* create a virtualenv and activate it
+
+'''bash
+$python -m virtualenv venv
+$source venv/bin/activate
+'''
+
 * install all the requirements
 
 ```bash

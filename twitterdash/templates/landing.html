@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Home - Brand</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/'+'bootstrap_landing.min.css') }}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="icon" href="{{url_for('static', filename='img/'+'dtweet.png')}}">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-light navbar-expand bg-light navigation-clean">
+        <div class="container"><a class="navbar-brand" href="#">TwitterDash</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"></button>
+            <div class="collapse navbar-collapse" id="navcol-1"><a class="btn btn-primary ml-auto" role="button" href="https://github.com/AliAbdelaal/twitter-dash" target="_blank">Github</a></div>
+        </div>
+    </nav>
+    <header class="masthead text-white text-center" style="background: url('assets/img/bg-masthead.jpg')no-repeat center center;background-size: cover;background-image: url(&quot;{{ url_for('static', filename='img/'+'twitter-wallpaper_628073983.png') }}&quot;);">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-9 mx-auto">
+                    <h1 class="mb-5">Your personal dashboard rightaway!</h1>
+                </div>
+                <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
+                    <form action="/dash" method="POST">
+                        <div class="form-row">
+                            <div class="col-12 col-md-9 mb-2 mb-md-0"><input class="form-control form-control-lg" type="text" placeholder="Enter your query" name="query"></div>
+                            <div class="col-12 col-md-3"><button class="btn btn-primary btn-block btn-lg" type="submit">Analyze</button></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="features-icons bg-light text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="mx-auto features-icons-item mb-5 mb-lg-0 mb-lg-3">
+                        <div class="d-flex features-icons-icon"><i class="far fa-smile m-auto text-primary" data-bs-hover-animate="pulse"></i></div>
+                        <h3>Sentiment analysis</h3>
+                        <p class="lead mb-0">Sentiment overview for your brand helps you understand your audience</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="mx-auto features-icons-item mb-5 mb-lg-0 mb-lg-3">
+                        <div class="d-flex features-icons-icon"><i class="far fa-calendar-alt m-auto text-primary" data-bs-hover-animate="pulse"></i></div>
+                        <h3>History overview</h3>
+                        <p class="lead mb-0">See how your brand trends over time to better understand your seasons</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="mx-auto features-icons-item mb-5 mb-lg-0 mb-lg-3">
+                        <div class="d-flex features-icons-icon"><i class="far fa-thumbs-up m-auto text-primary" data-bs-hover-animate="pulse"></i></div>
+                        <h3><strong>Engagement</strong></h3>
+                        <p class="lead mb-0">How people interact with your brand, likes, retweets or tweets</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="showcase"></section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+    <script src="{{ url_for('static', filename='js/'+'script_landing.min.js') }}"></script>
+</body>
+
+</html>

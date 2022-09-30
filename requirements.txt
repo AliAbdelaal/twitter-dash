@@ -13,7 +13,7 @@ gunicorn==19.9.0
 idna==2.8
 itsdangerous==1.1.0
 Jinja2==2.10.1
-joblib==0.13.2
+joblib==1.2.0
 kiwisolver==1.1.0
 lxml==4.4.1
 MarkupSafe==1.1.1
